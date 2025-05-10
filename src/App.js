@@ -166,7 +166,7 @@ function App() {
         </section>
 
         <section className="track-info">
-          <h2>ℹ️ Track Info</h2>
+          <h2>노래 정보</h2>
           {currentTrack ? (
             <div className="info-box">
               <p>
