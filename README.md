@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+# 🎵 Music Player App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**🔗 배포 링크**: [https://tranquil-meerkat-907a71.netlify.app/](https://tranquil-meerkat-907a71.netlify.app/)
 
-## Available Scripts
+React로 제작된 심플하고 직관적인 음악 플레이어 앱입니다. iTunes API를 이용해 음악을 검색하고, 미리 듣기, 재생/다음곡/반복 기능, 진행 바 및 곡 정보 표시 등을 제공합니다.
 
-In the project directory, you can run:
+<img src="./musicplayer-preview.png" alt="뮤직 플레이어 미리보기" width="700"/>
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🚀 주요 기능
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 🔍 **음악 검색**: iTunes API를 통해 실시간 검색
+- ▶️ **음악 재생**: 선택한 곡 미리 듣기 (Preview)
+- ⏭️ **다음곡 재생**: 현재 곡 기준 다음 검색 결과 재생
+- 🔁 **반복 재생**: 반복 여부 토글
+- 🔊 **볼륨 조절**: 슬라이더로 볼륨 조절 가능
+- 📊 **진행 바**: 실시간 재생 진행률 표시
+- 🕘 **시간 표시**: 현재 재생 시간 및 전체 시간 표시
+- 💽 **곡 정보 표시**: 아티스트, 장르 등 세부 정보 출력
+- 📱 **반응형 UI**: 모바일 환경에서 검색 결과 토글 가능
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ 사용 기술
 
-### `npm run build`
+- ⚛️ React
+- 🪝 React Hooks (`useState`, `useEffect`, `useRef`, `useCallback`)
+- 📡 axios - 외부 API 통신
+- 🎧 iTunes Search API - 음악 검색 및 미리듣기
+- 💅 CSS - 사용자 친화적인 UI 구성
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---

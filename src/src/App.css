@@ -1,0 +1,197 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  background-color: #222;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.search {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.search input {
+  padding: 0.5rem;
+  font-size: 16px;
+  width: 200px;
+}
+
+.search-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.search button {
+  padding: 0.5rem 1rem;
+  font-size: 16px;
+}
+
+.mobile-toggle-btn {
+  display: none;
+}
+
+.layout {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.search-results {
+  flex: 1;
+  background: #ffffff;
+  padding: 1rem;
+  border-right: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+.search-results h2 {
+  margin-top: 0;
+}
+
+.search-results ul {
+  list-style: none;
+  padding: 0;
+}
+
+.search-results li {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.player-center {
+  flex: 2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.vinyl-wrapper {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.vinyl {
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(#111 40%, transparent 40%);
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  animation: spin 10s linear infinite;
+}
+
+.cover {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  top: 75px;
+  left: 75px;
+  z-index: 2;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+audio {
+  margin: 1rem 0;
+}
+
+.progress-bar {
+  width: 80%;
+  height: 10px;
+  background: #ddd;
+  border-radius: 5px;
+  margin: 10px 0;
+  position: relative;
+}
+
+.progress {
+  height: 100%;
+  background: #2196f3;
+  border-radius: 5px;
+}
+
+.time-info {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  font-size: 14px;
+  color: #555;
+}
+
+.controls {
+  margin-top: 10px;
+}
+
+.controls button,
+.controls input[type="range"] {
+  margin: 0 5px;
+}
+
+.track-info {
+  flex: 1;
+  background: #ffffff;
+  padding: 1rem;
+  border-left: 1px solid #ccc;
+  overflow-y: auto;
+}
+
+.track-info h2 {
+  margin-top: 0;
+}
+
+.info-box {
+  background: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+  line-height: 1.6;
+}
+
+.info-box p {
+  margin: 0.5rem 0;
+}
+
+/* 모바일 최적화 */
+@media (max-width: 768px) {
+  .mobile-toggle-btn {
+    display: inline-block;
+  }
+
+  .track-info {
+    display: none;
+  }
+
+  .search-results.hide-mobile {
+    display: none;
+  }
+
+  .search {
+    align-items: center;
+  }
+}
